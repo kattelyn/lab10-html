@@ -1,0 +1,9 @@
+const express = require('express');
+const path = require('path');
+const app = express();
+const root = path.resolve(__dirname, '..');
+app.get('/', (req, res) => res.sendFile(path.join(root, 'index.html')));
+app.get('/float', (req, res) => res.sendFile(path.join(root, 'float.html')));
+app.get('/flexbox', (req, res) => res.sendFile(path.join(root, 'flexbox.html')));
+app.get('/grid', (req, res) => res.sendFile(path.join(root, 'grid.html')));
+app.listen(3000, () => console.log('http://localhost:3000'));

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Лабораторна №10 — float</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#f5f6f8} .topbar{padding:12px 18px;background:white;color:#394454;display:flex;gap:20px;align-items:center;flex-wrap:wrap}a{color:#356e9d}h1{font-size:20px;margin:0 12px 0 0}.wrapper{width:100%;height:calc(100vh - 55px);min-height:420px;padding:3px;gap:3px}.block{border:1px solid #f3f3f3;min-width:0;min-height:0}.blue{background:#5c9fd3}.cyan{background:#54c9c9}.red{background:#e16a6d}.yellow{background:#ffc20a}.green{background:#2ca77b}.gray{background:#718185}.orange{background:#c65b10}
+
+.wrapper{display:block;overflow:hidden}.upper{height:84%;overflow:hidden}.main{float:left;width:80%;height:100%}.gray{float:right;width:calc(20% - 3px);height:100%}.blue{height:39%;margin-bottom:3px}.middle{height:61%;overflow:hidden}.left{float:left;width:60%;height:100%}.yellow{float:right;width:calc(40% - 3px);height:100%}.pair{height:50%;overflow:hidden;margin-bottom:3px}.cyan{float:left;width:50%;height:100%}.red{float:right;width:calc(50% - 3px);height:100%}.green{height:calc(50% - 3px)}.orange{height:calc(16% - 3px);margin-top:3px}
+@media(min-width:1200px){.main{width:80%}.gray{width:calc(20% - 3px)}}
+@media(min-width:950px) and (max-width:1199px){.main{width:75%}.gray{width:calc(25% - 3px)}}
+@media(min-width:750px) and (max-width:949px){.main{width:70%}.gray{width:calc(30% - 3px)}}
+@media(min-width:500px) and (max-width:749px){.upper{height:85%}.main{float:none;width:100%;height:78%}.gray{float:none;width:100%;height:calc(22% - 3px);margin-top:3px}.orange{height:calc(15% - 3px)}.left{width:60%}.yellow{width:calc(40% - 3px)}}
+@media(max-width:499px){.wrapper{height:auto;min-height:calc(100vh - 90px)}.upper,.main,.middle,.left,.pair{height:auto;overflow:visible}.main,.gray,.left,.yellow,.cyan,.red{float:none;width:100%;height:95px;margin:0 0 3px}.blue,.green{height:95px;margin-bottom:3px}.orange{height:75px;margin-top:0}}
+
+</style>
+</head>
+<body>
+<header class="topbar"><h1>Лабораторна робота №10</h1><a href="index.html">Головна</a><a href="float.html">Float</a><a href="flexbox.html">Flexbox</a><a href="grid.html">Grid</a></header>
+<main class="wrapper"><section class="upper"><div class="main"><div class="block blue"></div><div class="middle"><div class="left"><div class="pair"><div class="block cyan"></div><div class="block red"></div></div><div class="block green"></div></div><div class="block yellow"></div></div></div><div class="block gray"></div></section><div class="block orange"></div></main>
+</body>
+</html>
